@@ -2,40 +2,55 @@
 <html>
   <head>
     <title>Roche's Blog</title>
-    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"
-  </head>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+        <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
   </head>
   <body>
     <header>
-      <h1>Roche's Blog</h1>
+      <!--color bar-->
     </header>
-    <nav>
-
-      <a href="#0.1_">Archive</a>
-        <ul>
-          <li><a href="#">Blog Post 1</a></li>
-          <li><a href="#">Blog Post 2</a></li>
-          <li><a href="#">Blog Post 3</a></li>
-          <li><a href="#">Blog Post 4</a></li>
-        </ul>
-      <p><a href="#">Search by Tags</a></p>
-      <p><a href="#">Search by Date</a></p>
-    </nav>
-    <section>
+     <section id="beach">
+      <h1> Roche's Blog</h1>
+    </section>
+    <div id="nav">
+    <a href="#">Archive</a><br>
+      <ul>
+        <li><a href="#">Blog Post 1</a></li>
+        <li><a href="#">Blog Post 2</a></li>
+        <li><a href="#">Blog Post 3</a></li>
+        <li><a href="#">Blog Post 4</a></li>
+      </ul>
+      <div id="search-links">
+        <a href="#">Search by Tags</a><br><br>
+        <a href="#">Search by Date</a><br>
+      </div>
+    </div>
+    <div id="main">
       <h2>Post Title - 11/17/2015</h2>
-      <p>Text, text, text, text, text, text,
+      Text, text, text, text, text, text,
       text, text, text, text, text, text, text,
       text, text, text, text, text, text, text, text, text,
-      text, text, text, text, text, text, text, text.</p>
-    </section>
+      text, text, text, text, text, text, text, text.
+    </div>
 
     <footer>
-      <a href="rochej.github.io">HOME</a> <a href="#">PROJECTS</a> <a href="#">BACKSTORY</a> <a href="#">Say hello</a>
+      <!--this will eventually contain a narrow color block-->
+      <table>
+      <td><a href="#">PROJECTS</a></td>
+      <td>| </td>
+      <td><a href="blog/index.html">BLOG</a></td>
+      <td>| </td>
+      <td><a href ="#">BACKSTORY</a></td>
+      <td>| </td>
+      <td><a href ="">HOME</a></td>
+      <td>| </td>
+      <td><a href ="#">Say hello!</a></td> <!--weird formatting thing happening here-when I put in two words, they get pushed to separate lines no matter how wide the table's cell is.-->
+      </table>
     </footer>
 
-    <section>
+    <!--Image is from a previous assignment-commented out on 11/22<section>
       <img src="../imgs/wireframe-blogs.png">
-    </section>
+    </section>-->
 
     </body>
 </html>

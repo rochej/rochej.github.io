@@ -20,7 +20,7 @@ header {
   background-size: cover;
   background-attachment: fixed;
   height:60%;
-  margin-top:2%;
+  margin-top:1%;
   position:relative;
 }
 
@@ -66,6 +66,7 @@ footer {
   padding:0px;
   text-decoration: none;
   text-align: center;
+  clear:both;
 }
 
 table{
@@ -73,7 +74,7 @@ table{
 }
 
 td{
-  width:30px;
+  width:60px;
   height; 25px;
 }
 

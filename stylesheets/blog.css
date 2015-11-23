@@ -1,0 +1,44 @@
+#beach{
+  height:20%;
+  position:relative;
+}
+h1{
+  text-align: left;
+  margin:0%;
+  padding:2%;
+}
+#nav{
+  margin:2%;
+  padding:2%;
+  width:15%;
+  height:75%;
+  float:left;
+  position:relative;
+  background-color:#5E9BA6;
+  clear:both;
+}
+ul{
+  height:10%;
+  position:relative;
+  padding-bottom: 50%; /* weird overlap ish in nav bar*/
+}
+/*trying to figure out weird nav bar layout*/
+#search-links{
+  clear:both;
+  float:bottom;
+  height:25%;
+  color:black;
+}
+h2{
+  color:black;
+  font-size:2em;
+  height:10%;
+}
+#main{
+  color:black;
+  font-size:1em;
+  height: 75%;
+  width:75%;
+  position: relative;
+  float: right;
+}

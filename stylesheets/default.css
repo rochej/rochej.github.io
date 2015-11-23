@@ -51,6 +51,7 @@ h1 span{
   height:25%;
   width:25%;
   background-color:#5E9BA6;
+  border:2px solid white;
   color:#292D31;
   display:inline-block;
   text-align: center;

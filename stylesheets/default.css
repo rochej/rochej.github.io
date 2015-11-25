@@ -7,6 +7,11 @@
 
 html{
   background-color: #fafafa;
+  /*background image to play with later
+  background-image: url("../imgs/gloomy-cloud.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-filter: brightness(200%);*/
 }
 
 header {

@@ -8,15 +8,12 @@ h1{
   padding:2%;
 }
 #nav{
-  margin:2%;
+  margin:2% 2% 2% 0;
   padding:2%;
   width:15%;
-  min-width:125px;
   height:75%;
-  float:left;
-  position:relative;
+  display:inline-block;
   background-color:#5E9BA6;
-  clear:both;
 }
 ul{
   color: white;
@@ -24,26 +21,20 @@ ul{
   position:relative;
   padding-bottom: 50%; /* weird overlap ish in nav bar*/
 }
-/*trying to figure out weird nav bar layout*/
-#search-links{
-  clear:both;
-  float:bottom;
-  height:25%;
-  color:black;
-}
+
 h2{
   color:black;
   font-size:2em;
   height:10%;
 }
-#main{
+main{
   color:black;
   font-size:1em;
   height: 75%;
+  width: 75%;
   max-width:80%;
-  min-width:100px;
-  position: relative;
-  float: right;
+  display: inline-block;
+  vertical-align: top;
 }
 .button{
   margin:3%;

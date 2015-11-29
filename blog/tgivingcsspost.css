@@ -1,0 +1,49 @@
+html{
+  background-color: grey;
+}
+#wine{
+  display:inline-block;
+  position:fixed;
+}
+#plate{
+  position:static;
+  display:inline-block;
+  border-radius:100%;
+  border:2px solid blue;
+  background-color:white;
+  height:700px;
+  width:700px;
+}
+#turkey{
+position:relative;
+display:inline-block;
+top:150px;
+left:150px;
+}
+#cranberry{
+  position:relative;
+  display:inline-block;
+  background-color:#8C001A;
+  height:100px;
+  width:100px;
+  top:-50px;
+  left:-100px;
+}
+#corn{
+  position:absolute;
+  display:inline-block;
+  background-color: yellow;
+  height:200px;
+  width:200px;
+  right:270px;
+  top: 250px;
+}
+#green{
+  position:relative;
+  display:inline-block;
+  background-color: green;
+  height:100px;
+  width:100px;
+  top:200px;
+}
+

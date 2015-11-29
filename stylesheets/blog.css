@@ -38,6 +38,13 @@ main{
 main a{
   color:grey;
 }
+main img{
+width:45%;
+height:;
+background-color:grey;
+display:inline-block;
+}
+
 .button{
   margin:3%;
   height:10%;

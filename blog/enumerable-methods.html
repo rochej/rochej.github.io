@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Roche's Blog</title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+        <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
+        <meta charset ="UTF-8">
+  </head>
+  <body>
+    <header>
+      <!--color bar-->
+    </header>
+     <section id="beach">
+      <h1> Roche's Blog</h1>
+    </section>
+    <div id="nav">
+    <a href="#">Archive</a><br>
+      <ul>
+        <li><a href="git.html">Ode to Git</a></li>
+        <li><a href="css-concepts.html">CSS for Dinner</a></li>
+        <li><a href="arrays-hashes.html">Arrays and Hashes</a></li>
+        <li><a href="enumerable-methods.html">Map Yap</a></li>
+      </ul>
+        <a href="#">Search by Tags</a><br><br>
+        <a href="#">Search by Date</a><br>
+    </div>
+    <main>
+      <h2>Map Yap - 12/13/2015</h2>
+        <p>While many of Ruby’s built-in enumerable methods are specifically designed to sort the items in the collection by different parameters, map is a powerful tool to act on each item in a collection.</p>
+
+        <p>Just the other day, I was sitting with a group of dancers writing some thank-you notes for donations we’d received.  We were passing the notes around the table, taking turns adding different things to each note until each one was done.  Please suspend your disbelief and imagine that our Ruby code would work in the physical world.</p>
+
+        <pre><code>
+notes=[Phonecia’s note, David’s note, Jak’s note, Britknee’s note, Ed’s note, …]
+notes.map!{ | note | add salutation} #Roche’s code
+notes.map!{ | note | add info about last project and next project} #Virginia’s code
+notes.map!{ | note | add happy holidays!} #Sam’s code
+notes.map!{ | note | address the envelope} #Alex’s code
+notes.map!{ | note | stick on a stamp} #Odessa’s code</code></pre>
+
+        <p>Can you imagine how long it would take to write code for each of my dancer friend’s to do each task?  And what if we forgot to do one task on one note?  If we forgot the stamp, the note would never get to its recipient!</p>
+
+        <p>Also, notice above that we are using the destructive .map! rather than .map.  The later would create a new array, while the former acts directly on the original array.</p>
+
+        <p>Now let’s use this method on some actual code.</p>
+
+<pre><code>
+array = [1,2,3,4,5,6,7,8]
+array.map {|item| print “#{item}! “ if item%2==0}
+print “Who do we appreciate?!?”</code></pre>
+
+        <p>Would display:
+        2! 4! 6! 8! Who do we appreciate?!?</p>
+
+        <p>Our .map iterates over the array and prints out only the numbers that are even—very useful for our spirit day cheer.</p>
+    </main>
+
+    <footer>
+      <table>
+      <td><a href="#">PROJECTS</a></td>
+      <td>| </td>
+      <td><a href="blog/index.html">BLOG</a></td>
+      <td>| </td>
+      <td><a href ="#">BACKSTORY</a></td>
+      <td>| </td>
+      <td><a href ="../index.html">HOME</a></td>
+      <td>| </td>
+      <td><a href ="../hello.html">Say hello!</a></td>
+      </table>
+    </footer>
+    </body>
+</html>

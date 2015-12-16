@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Roche's Blog</title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+        <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
+        <meta charset ="UTF-8">
+  </head>
+  <body>
+    <header>
+      <!--color bar-->
+    </header>
+     <section id="beach">
+      <h1> Roche's Blog</h1>
+    </section>
+    <div id="nav">
+    <a href="#">Archive</a><br>
+      <ul>
+        <li><a href="git.html">Ode to Git</a></li>
+        <li><a href="css-concepts.html">CSS for Dinner</a></li>
+        <li><a href="arrays-hashes.html">Arrays and Hashes</a></li>
+        <li><a href="enumerable-methods.html">Map Yap</a></li>
+        <li><a href="ruby-classes.html">Stay Classy</a></li>
+      </ul>
+        <a href="#">Search by Tags</a><br><br>
+        <a href="#">Search by Date</a><br>
+    </div>
+    <main>
+      <h2>Stay Classy - 12/16/2015</h2>
+        <p>Classes are a powerful way to organize objects that share characteristics.  In Ruby, classes can inherit methods from one (and only one) parent class and have multiple child classes.</p>
+
+        <p>In today’s example, I will begin to create a Ruby program that can replace me as a yoga teacher while I attend DBC.</p>
+
+        <p>First, we have the parent class Movement_Class.  We could use this for a ballet class, a bootcamp class or any other type of instructor led movement experience.  The only prerequisite for taking a Movement Class is that you have a body—no computers allowed.  We also define a method in the parent class called howd_it_go?—since any class is ALWAYS classy, that’s what it puts.</p>
+
+
+<pre><code>class Movement_Class
+  def initialize (body)
+    @body=body
+    if @body
+      puts "You're looking well today!"
+    else
+      raise ArgumentError.new ("Must have body to take class!")
+    end
+  end
+
+  def howd_it_go?
+    puts "As always, class was classy : )"
+  end
+end</code></pre>
+
+        <p>Next we define Yoga_Class, which is a subclass of Movement_Class.  Yoga_Class takes an argument, advanced, that is either true or false.  This becomes and instance variable—it’s available throughout the class and interacts with other methods.  For example, in our .instruction method, our advanced students jump forward and back 8 times, but our non-advanced students only do it 1 time.</p>
+
+
+<pre><code>class Yoga_Class < Movement_Class
+  def initialize (advanced)
+    @advanced=advanced
+    if @advanced
+      @rounds=8
+    else
+      @rounds=1
+    end
+  end
+
+  def begin
+    if @advanced
+      puts "Ready for inversions?  Let's go!"
+    else
+      puts "OK--let's start in child's pose."
+    end
+  end
+
+  def instruction
+    @rounds.times do
+      puts "Jump forward.  Now jump back."
+    end
+    puts "Well done EVERYONE!"
+  end
+end</code></pre>
+
+    <p>Now we can try out our program with the following commands:</p>
+
+
+<pre><code>level2 = Yoga_Class.new(false)
+level2.begin
+level2.instruction
+level2.howd_it_go?</code></pre>
+
+    <p>This returns the beginnings of a revolution in fitness...!</p>
+    <p>OK--let's start in child's pose.<br>
+Jump forward.  Now jump back.<br>
+Well done EVERYONE!<br>
+As always, class was classy : )</p>
+
+
+
+
+    </main>
+
+    <footer>
+      <table>
+      <td><a href="#">PROJECTS</a></td>
+      <td>| </td>
+      <td><a href="blog/index.html">BLOG</a></td>
+      <td>| </td>
+      <td><a href ="#">BACKSTORY</a></td>
+      <td>| </td>
+      <td><a href ="../index.html">HOME</a></td>
+      <td>| </td>
+      <td><a href ="../hello.html">Say hello!</a></td>
+      </table>
+    </footer>
+    </body>
+</html>

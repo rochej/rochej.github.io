@@ -62,6 +62,8 @@ color:#FF8300;
 background-color:#E0E0E0;
 font-family:Courier;
 font-size:.9em;
+display:block;
+width: 100%;
 /*padding:1px;*/
 /*margin:1px;*/
 /*border:1px solid #C8C8C8;*/

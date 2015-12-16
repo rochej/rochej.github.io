@@ -31,7 +31,7 @@
 
         <p>In today’s example, I will begin to create a Ruby program that can replace me as a yoga teacher while I attend DBC.</p>
 
-        <p>First, we have the parent class Movement_Class.  We could use this for a ballet class, a bootcamp class or any other type of instructor led movement experience.  The only prerequisite for taking a Movement Class is that you have a body—no computers allowed.  We also define a method in the parent class called howd_it_go?—since any class is ALWAYS classy, that’s what it puts.</p>
+        <p>First, we have the parent class Movement_Class.  We could use this for a ballet class, a bootcamp class or any other type of instructor led movement experience.  All classes mush have an initialize method that allow you to create a new object of that class--for our Movement_Class, the only parameter/prerequisite for taking a Movement Class is that you have a body—no computers allowed.  We also define a method in the parent class called howd_it_go?—since any class is ALWAYS classy, that’s what it puts.</p>
 
 
 <pre><code>class Movement_Class
@@ -49,7 +49,7 @@
   end
 end</code></pre>
 
-        <p>Next we define Yoga_Class, which is a subclass of Movement_Class.  Yoga_Class takes an argument, advanced, that is either true or false.  This becomes and instance variable—it’s available throughout the class and interacts with other methods.  For example, in our .instruction method, our advanced students jump forward and back 8 times, but our non-advanced students only do it 1 time.</p>
+        <p>Next we define Yoga_Class, which is a subclass of Movement_Class.  Yoga_Class takes an argument, advanced, that is either true or false.  This becomes an instance variable (demarcated by the @)—it’s available throughout the class and interacts with other methods.  For example, in our .instruction method, our advanced students jump forward and back 8 times, but our non-advanced students only do it 1 time.</p>
 
 
 <pre><code>class Yoga_Class < Movement_Class
@@ -87,10 +87,10 @@ level2.instruction
 level2.howd_it_go?</code></pre>
 
     <p>This returns the beginnings of a revolution in fitness...!</p>
-    <p>OK--let's start in child's pose.<br>
-Jump forward.  Now jump back.<br>
-Well done EVERYONE!<br>
-As always, class was classy : )</p>
+    <p>=> OK--let's start in child's pose.<br>
+=> Jump forward.  Now jump back.<br>
+=> Well done EVERYONE!<br>
+=> As always, class was classy : )</p>
 
 
 

@@ -2,11 +2,14 @@
 /*  background-image: url("../imgs/mapstory.png");*/
   width: 100%;
   height: auto;
-  padding: 1% 0% 0% 0%;
+  padding: 1% 0% 1% 0%;
 }
 #map img {
   width:100%;
+  max-width: 850px;
   height: auto;
+  display: block;
+  margin: auto;
 }
 
 #beach{

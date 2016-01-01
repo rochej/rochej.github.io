@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Roche's Blog</title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css"/>
+        <link type="text/css" rel="stylesheet" href="../stylesheets/blog.css"/>
+        <meta charset ="UTF-8">
+  </head>
+  <body>
+    <header>
+      <!--color bar-->
+    </header>
+     <section id="beach">
+      <h1> Roche's Blog</h1>
+    </section>
+    <div id="nav">
+    <a href="#">Archive</a><br>
+      <ul>
+        <li><a href="git.html">Ode to Git</a></li>
+        <li><a href="css-concepts.html">CSS for Dinner</a></li>
+        <li><a href="arrays-hashes.html">Arrays and Hashes</a></li>
+        <li><a href="enumerable-methods.html">Map Yap</a></li>
+        <li><a href="ruby-classes.html">Stay Classy</a></li>
+        <li><a href="javascript.html">Javablog</a></li>
+      </ul>
+        <a href="#">Search by Tags</a><br><br>
+        <a href="#">Search by Date</a><br>
+    </div>
+    <main>
+      <h2>Javablog - 01/01/2016</h2>
+<p>Happy new year!</p>
+
+<p>I am happy to report that both Ruby and Javascript have metaobjects.  This means that rather than defining basic properties and methods for each and every object created over and over again, it is possible to make a template that can be applied when needed.</p>
+
+<p>Imagine that we wanted to make some beverages for our New Years Eve extravaganza.  Making a template object would be a good start.</p>
+
+<p>In Ruby, these metaobjects are called classes—<a href="ruby-classes.html">described last week.</a></p>
+
+<pre><code>class Beverage
+
+attr _accessor :booze, :mixer, :strength
+
+def initialize (booze, mixer, strength)
+  @booze = booze
+  @mixer = mixer
+  @strength = strength
+end
+
+def how_crazy?
+  if @booze ==“tequila” && @strength >5
+    puts “Hella crazy!”
+  else
+    puts “OK.”
+  end
+end
+
+end</pre></code>
+
+<p>In JavaScript, these metaobjects are established through constructor functions.</p>
+<pre><code>var Beverage = function (booze, mixer, strength) {
+  this.booze=booze;
+  this.mixer=mixer;
+  this.strength=strength;
+  this.how_crazy = function (){
+    if (booze == "tequila" && strength > 5)
+      console.log("Hella crazy!");
+    else
+      console.log("OK.");
+  }
+};
+
+var margarita= new Beverage ("tequila", "lime", 6)
+
+margarita.how_crazy()
+=>Hella crazy!</pre></code>
+
+</p>There are a few dissimilarities between these two strategies. Notice the syntactical differences--Ruby's instance variables are demarcated by an @, wheras Javascript uses this.  More significantly, Ruby’s classes come with many build in methods and can have a parent class as well, while one must write ANY methods needed for a JavaScript constructed object.</p>
+
+    </main>
+
+    <footer>
+      <table>
+      <td><a href="../projects/index.html">PROJECTS</a></td>
+      <td>| </td>
+      <td><a href="blog/index.html">BLOG</a></td>
+      <td>| </td>
+      <td><a href ="../me.html">BACKSTORY</a></td>
+      <td>| </td>
+      <td><a href ="../index.html">HOME</a></td>
+      <td>| </td>
+      <td><a href ="../hello.html">Say hello!</a></td>
+      </table>
+    </footer>
+    </body>
+</html>

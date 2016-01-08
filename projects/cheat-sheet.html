@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Roche's JavaScript Prototype Cheatsheet</title>
+    <link type="text/css" rel="stylesheet" href="../stylesheets/default.css">
+    <link type="text/css" rel="stylesheet" href="../stylesheets/cheat-sheet.css">
+<!--     // <script src="cheat-sheet.js"></script> -->
+  </head>
+  <body>
+    <header>
+      <!--this will eventually contain a narrow color block-->
+    </header>
+    <section id="beach">
+      <h1>Roche's JavaScript Prototype Cheatsheet
+        <span>Hover over turquoise quadrangle for code samples.</span></h1>
+      <div id ="wrapper">
+      <div class="trio">
+        <h1 class="unodostres">(1) Create</h1>
+        <p>Write a constructor function.  Pass in arguments and define THIS prototypes property names.</p>
+        <div class ="code">function dog (name, size){</br>
+          this.dogName=name;<br>
+          this.dogSize=size;<br>}</div>
+      </div>
+      <div class="trio" id="middle">
+        <h1 class="unodostres">(2) Add</h1>
+        <p> Add methods or properties to the prototype outside the initial definition using .prototype.</p>
+        <div class ="code">dog.prototype.dogDescriptor=""</div>
+      </div>
+      <div class="trio">
+        <h1 class="unodostres">(3) Use</h1>
+        <p> Initialize a new instance of the prototype using new.</p>
+        <div class ="code">var myDog = new dog ("Misty Pepper", 32, "the cutest")</div>
+      </div>
+    </div>
+</section>
+    <footer>
+      <!--this will eventually contain a narrow color block-->
+      <table>
+      <td><a href="index.html">PROJECTS</a></td>
+      <td>| </td>
+      <td><a href="../blog/index.html">BLOG</a></td>
+      <td>| </td>
+      <td><a href ="../me.html">BACKSTORY</a></td>
+      <td>| </td>
+      <td><a href ="../index.html">HOME</a></td>
+      <td>| </td>
+      <td><a href ="#">Say hello!</a></td>
+      </table>
+    </footer>
+  </body>
+</html>

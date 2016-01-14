@@ -37,4 +37,7 @@
 
 .trio figcaption{
   text-align: center;
+  height:25%;
+  display: inline-block;
+
 }
